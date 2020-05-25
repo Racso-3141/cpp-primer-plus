@@ -1,4 +1,4 @@
-//exercise 6 tax
+//exercise 5 tax
 #include <iostream>
 const double LEV_1 = 5000;
 const double LEV_2 = 15000;

@@ -1,18 +1,10 @@
 #include <iostream>
-using namespace std;
-int main()
-{
-    int input;
-    int count = 0;
-    cout << "To stop enter any character";
-    cout << "\nEnter Your Input::";
-
-    // cin returns false when a character
-    // is entered
-    while (cin >> input)
-        count++;
-
-    cout << "\nTotal number of inputs entered: "
-         << count;
-    return 0;
-} 
+#include <cctype>
+int main(int argc, char const *argv[]) {
+  using namespace std;
+  char c1, c2;
+  c1 = 'a';
+  c2 = 'a';
+  cout << (c1 == c2) << '\n';
+  return 0;
+}

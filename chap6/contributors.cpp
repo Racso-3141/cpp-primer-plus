@@ -8,14 +8,14 @@ struct contributor {
 };
 int main(int argc, char const *argv[]) {
   int count;
-  int Grand[count];
-  int Patron[count];
-  int grand = 0;
-  int patron = 0;
   cout << "Enter the number of contributors: ";
   cin >> count;
   cin.get();
   contributor contributors[count];
+  int Grand[count];
+  int Patron[count];
+  int grand = 0;
+  int patron = 0;
 
   //Initialize contributors information
   int i = 0;

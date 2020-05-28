@@ -3,15 +3,11 @@
 #include <string>
 using namespace std;
 int main(int argc, char const *argv[]) {
-      int size;
-      string dessert;
-
-      cout << "Enter your name: ";
-      cin >> size;
-      cout << "Enter your favorite dessert: ";
-      cin >> dessert;
-      cout << "I have some delicious " << dessert;
-      cout << " for you, " << size << endl;
+  int a;
+  cin >> a;
+  if (cin) {
+    cout << "Yes.";
+  }
 
       return 0;
   }

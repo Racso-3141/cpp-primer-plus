@@ -10,23 +10,24 @@ namespace VECTOR {
     private:
      double x; // horizontal value
      double y;    // vertical value
-     double mag; // length of vector
-     double ang; //direction
+     //double mag; // length of vector
+     //double ang; //direction
      Mode mode; // RECT or POL
 
     // private methods for setting values
-      void set_mag();
-      void set_ang();
-      void set_x();
-      void set_y();
-      
+      //void set_mag();
+      //void set_ang();
+      void set_x(double, double);
+      void set_y(double, double);
     public:
       Vector();
-      Vector(double n1, double n2, Mode form = RECT); void reset(double n1, double n2, Mode form = RECT); ~Vector();
+      Vector(double n1, double n2, Mode form = RECT);
+      void reset(double n1, double n2, Mode form = RECT);
+      ~Vector();
       double xval() const {return x;}
       double yval() const {return y;}
-      double magval() const {return mag;}
-      double angval() const {return ang;}
+      double magval() const;
+      double angval() const;
       void polar_mode();
       void rect_mode();
       // operator overloading
